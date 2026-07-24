@@ -54,3 +54,33 @@ score = 75
 print(score >= 60 and score <=100)
 
 
+#part 2
+#1
+door_locked = False
+has_key = False
+admin_override = True
+
+can_open = door_locked and (has_key or admin_override)
+
+print(can_open)
+
+#2
+message = ""
+backup_message = "No message found"
+
+print(message or backup_message)
+
+#3
+x = None
+print(x is None)
+
+#4
+a = 0
+b = "ready"
+c = 42
+
+print(a or b or c)
+
+#5
+score = 85
+print("pass" if score >= 60 else "fail")
