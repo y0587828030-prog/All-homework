@@ -1,6 +1,7 @@
 #Part 1 — Basics: list
 #1
 agents = ['Alpha', 'Bravo', 'Charlie', 'Delta', 'Echo']
+print(agents)
 #2
 print(agents[0], agents[-1])
 #3
@@ -8,9 +9,11 @@ print(agents[2])
 #4
 print(agents[1:4])
 #5
-print(agents.append("Foxtrot"))
+agents.append("Foxtrot")
+print(agents)
 #6
-print(agents.insert(2,"Zulu"))
+agents.insert(2,"Zulu")
+print(agents)
 #7
 agents.remove("Bravo")
 print(agents)
@@ -32,9 +35,42 @@ new_agent[0] = "jonson"
 print(new_agent)
 print(agents)
 
+#part 2 
+#1
+numbers = [3, 1, 4, 1, 5, 9, 2, 6]
+numbers.sort()
+print("list after sort() ", numbers)
 
 
+numbers = [3, 1, 4, 1, 5, 9, 2, 6]
+new_num = sorted(numbers)
+print("New list from sorted():", new_num)
+print(numbers)
 
+#2
+a = [1, 2, 3]
+b = [4, 5, 6]
+print(a+b)
+
+a.extend(b)
+print(a)
+
+#3
+items = ['x', 'y', 'z', 'x', 'y', 'x']
+print(items.count("x"))
+
+items.remove('x')
+items.remove('x')
+items.remove('x')
+print(items)
+
+#4
+data = [1, 2, 3, 4, 5]
+print(data[0::2])
+
+#5
+matrix = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
+print(matrix[1][1])
 
 
 
